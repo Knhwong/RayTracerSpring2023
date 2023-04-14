@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -I/usr/local/include/opencv4  -g   -o CMakeFiles/jsonexample.dir/examples/jsonExample.cpp.o -c /root/RayTracer/examples/jsonExample.cpp",
+  "file": "/root/RayTracer/examples/jsonExample.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/vectorexample.dir/examples/vecMatrixExample.cpp.o -c /root/RayTracer/examples/vecMatrixExample.cpp",
+  "file": "/root/RayTracer/examples/vecMatrixExample.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/cameras/Pinhole.cpp.o -c /root/RayTracer/cameras/Pinhole.cpp",
+  "file": "/root/RayTracer/cameras/Pinhole.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/cameras/ThinLens.cpp.o -c /root/RayTracer/cameras/ThinLens.cpp",
+  "file": "/root/RayTracer/cameras/ThinLens.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/Camera.cpp.o -c /root/RayTracer/core/Camera.cpp",
+  "file": "/root/RayTracer/core/Camera.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/LightSource.cpp.o -c /root/RayTracer/core/LightSource.cpp",
+  "file": "/root/RayTracer/core/LightSource.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/Material.cpp.o -c /root/RayTracer/core/Material.cpp",
+  "file": "/root/RayTracer/core/Material.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/RayTracer.cpp.o -c /root/RayTracer/core/RayTracer.cpp",
+  "file": "/root/RayTracer/core/RayTracer.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/Scene.cpp.o -c /root/RayTracer/core/Scene.cpp",
+  "file": "/root/RayTracer/core/Scene.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/core/Shape.cpp.o -c /root/RayTracer/core/Shape.cpp",
+  "file": "/root/RayTracer/core/Shape.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/lights/AreaLight.cpp.o -c /root/RayTracer/lights/AreaLight.cpp",
+  "file": "/root/RayTracer/lights/AreaLight.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/lights/PointLight.cpp.o -c /root/RayTracer/lights/PointLight.cpp",
+  "file": "/root/RayTracer/lights/PointLight.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/main/main.cpp.o -c /root/RayTracer/main/main.cpp",
+  "file": "/root/RayTracer/main/main.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/materials/BlinnPhong.cpp.o -c /root/RayTracer/materials/BlinnPhong.cpp",
+  "file": "/root/RayTracer/materials/BlinnPhong.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/shapes/BVH.cpp.o -c /root/RayTracer/shapes/BVH.cpp",
+  "file": "/root/RayTracer/shapes/BVH.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/shapes/Plane.cpp.o -c /root/RayTracer/shapes/Plane.cpp",
+  "file": "/root/RayTracer/shapes/Plane.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o -c /root/RayTracer/shapes/Sphere.cpp",
+  "file": "/root/RayTracer/shapes/Sphere.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o -c /root/RayTracer/shapes/TriMesh.cpp",
+  "file": "/root/RayTracer/shapes/TriMesh.cpp"
+},
+{
+  "directory": "/root/RayTracer/build",
+  "command": "/usr/bin/g++   -I/root/RayTracer/build -I/root/RayTracer -I/root/RayTracer/parsers -I/root/RayTracer/math -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/raytracer.dir/shapes/Triangle.cpp.o -c /root/RayTracer/shapes/Triangle.cpp",
+  "file": "/root/RayTracer/shapes/Triangle.cpp"
+}
+]

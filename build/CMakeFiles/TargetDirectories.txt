@@ -1,0 +1,5 @@
+/root/RayTracer/build/CMakeFiles/rebuild_cache.dir
+/root/RayTracer/build/CMakeFiles/jsonexample.dir
+/root/RayTracer/build/CMakeFiles/edit_cache.dir
+/root/RayTracer/build/CMakeFiles/vectorexample.dir
+/root/RayTracer/build/CMakeFiles/raytracer.dir

@@ -27,14 +27,10 @@ Vec3f* RayTracer::render(Camera* camera, Scene* scene, int nbounces){
 	int width = camera->getWidth();
 	int height = camera->getHeight();
 	Vec3f* pixelbuffer=new Vec3f[width*height];
-	//----------main rendering function to be filled------
-	//Vec3f *framebuffer = new Vec3f[imageWidth * imageHeight]; 
 	for (int i = 0; i < height; i++) { 
 		for (int j = 0; j < width; j++) {
-
 			Shape* nearest_object;
-			Ray ray = camera->calculateRay(j, i); 
-			Hit hit = NearestIntersection(scene, ray, nearest_object);
+			Ray ray = camera->calculateRay(j, i);
 			pixelbuffer[j + i*width] = RayTrace(scene, ray, nbounces);
 		} 
 	} 
@@ -44,20 +40,16 @@ Vec3f* RayTracer::render(Camera* camera, Scene* scene, int nbounces){
 
 Hit RayTracer::NearestIntersection(Scene* scene, Ray ray, Shape*& object) {
 	RayIntersections++;
-	Hit hit = Hit(false);
-	float nearest = INFINITY;
+	Hit nearest = Hit(false, Vec3f(0), Vec3f(0), INFINITY);
 	for (auto shape: scene->shapes) { 
 		Hit p = shape->intersect(ray);
-		float distance = (p.point - ray.origin).length();
-		if (p.isHit && distance < nearest) {
+		if (p.isHit && p.distance < nearest.distance) {
 			RayHits++;
-			nearest = distance;
-			hit = p;
+			nearest = p;
 			object = shape;
 		}
 	}
-	if (hit.isHit) return hit;
-	else return Hit(false);
+	return nearest;
 }
 
 Vec3f RayTracer::RayTrace(Scene* scene, Ray ray, int nbounces) {
@@ -72,6 +64,13 @@ Vec3f RayTracer::RayTrace(Scene* scene, Ray ray, int nbounces) {
 		Vec3f S = (source->get_position() - hit.point).normalize();
 		Shape* dummy;
 		Hit obstructed = NearestIntersection(scene, Ray(RayType::SHADOW, S, hit.point + hit.normal*SHADOW_BIAS), dummy);
+		//Hit obstructed = Hit(false);
+		if (obstructed.isHit == true) {
+			if (obstructed.distance > (source->get_position() - hit.point).length()) {
+				obstructed.isHit = false;
+			}
+		}
+
 		if (obstructed.isHit == false) {
 			lightColoring = lightColoring + obj->shade(source, hit.point, -ray.direction, hit.normal);
 		}
@@ -79,6 +78,10 @@ Vec3f RayTracer::RayTrace(Scene* scene, Ray ray, int nbounces) {
 	//Reflection
 	Vec3f R = ray.direction - (2 * ray.direction.dotProduct(hit.normal) * hit.normal);
 	Vec3f reflection = RayTrace(scene, Ray(RayType::PRIMARY, R, hit.point+hit.normal*SHADOW_BIAS), nbounces-1);
+
+
+	//Refraction
+	
 
 	return lightColoring + (reflection*obj->getKr());
 }
@@ -105,10 +108,6 @@ Vec3f* RayTracer::tonemap(Vec3f* pixelbuffer, int size){
 		pixelbuffer[i].y = std::max(pixelbuffer[i].y, f);
 		pixelbuffer[i].z = std::max(pixelbuffer[i].z, f);
 	}
-
-
-
-
 
 	return pixelbuffer;
 

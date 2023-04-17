@@ -185,6 +185,7 @@ CMakeFiles/raytracer.dir/core/RayTracer.cpp.o
  ../core/RayHitStructs.h
  ../core/Scene.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/rapidjson/allocators.h
@@ -252,6 +253,7 @@ CMakeFiles/raytracer.dir/core/Scene.cpp.o
  ../core/Material.h
  ../core/RayHitStructs.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/rapidjson/allocators.h
@@ -441,10 +443,10 @@ CMakeFiles/raytracer.dir/main/main.cpp.o
  ../core/RayTracer.h
  ../core/Scene.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/PPMWriter.h
- ../parsers/happly.h
  ../parsers/rapidjson/allocators.h
  ../parsers/rapidjson/document.h
  ../parsers/rapidjson/encodedstream.h
@@ -759,9 +761,9 @@ CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o
  ../core/Material.h
  ../core/RayHitStructs.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
- ../parsers/happly.h
  ../parsers/rapidjson/allocators.h
  ../parsers/rapidjson/document.h
  ../parsers/rapidjson/encodedstream.h

@@ -21,9 +21,9 @@ namespace rt{
 
 class Material{
 public:
-    Material(float ks, float kd, float kr, float specular, Vec3f diffuse)
+    Material(float ks, float kd, float kr, int specular, Vec3f diffuse)
     :ks(ks), kd(kd), kr(kr), specularExponent(specular), diffuseColor(diffuse){};
-    Material(float ks, float kd, float kr, float specular, Vec3f diffuse, std::string t, float w, float h);
+    Material(float ks, float kd, float kr, int specular, Vec3f diffuse, std::string t, float w, float h);
     virtual ~Material(){};
 
     static Material* createMaterial(Value& mat);
@@ -36,7 +36,7 @@ protected:
     float ks = 0;
     float kd = 0;
     float kr = 0;
-    float specularExponent = 0;
+    int specularExponent = 0;
     Vec3f diffuseColor;
     std::string tPath = "";
     float tWidth;

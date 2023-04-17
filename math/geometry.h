@@ -102,6 +102,7 @@ public:
     { x *= r, y *= r, z *= r; return *this; }
     Vec3 crossProduct(const Vec3<T> &v) const
     { return Vec3<T>(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x); }
+    bool operator == (const Vec3 &v) const { return (x == v.x && y == v.y && z == v.z);}
     T norm() const
     { return x * x + y * y + z * z; }
     T length() const

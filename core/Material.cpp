@@ -2,7 +2,7 @@
 #include "materials/BlinnPhong.h"
 namespace rt {
 
-Material::Material(float ks, float kd, float kr, float specular, Vec3f diffuse, std::string t, float w, float h)
+Material::Material(float ks, float kd, float kr, int specular, Vec3f diffuse, std::string t, float w, float h)
     :ks(ks), kd(kd), kr(kr), specularExponent(specular), diffuseColor(diffuse), tPath(t), tWidth(w), tHeight(h)
     {
     tex = cv::imread(tPath, cv::IMREAD_COLOR);
@@ -20,13 +20,13 @@ Vec3f Material::getColor(float u, float v) {
 }
 
 Material* Material::createMaterial(Value& mat) {
-  
+  int s = mat["specularexponent"].GetFloat();
   if (mat.HasMember("tPath")) {
     std::string path = mat["tPath"].GetString();
     return new BlinnPhong(mat["ks"].GetFloat(), 
                         mat["kd"].GetFloat(),
                         (mat.HasMember("kr") ? mat["kr"].GetFloat() : 0.0),
-                        mat["specularexponent"].GetFloat(),
+                        mat["specularexponent"].GetInt(),
                         parseVec3f(mat["diffusecolor"].GetArray()), 
                         path,
                         mat["tWidth"].GetFloat(), 
@@ -35,7 +35,7 @@ Material* Material::createMaterial(Value& mat) {
     return new BlinnPhong(mat["ks"].GetFloat(), 
                         mat["kd"].GetFloat(),
                         (mat.HasMember("kr") ? mat["kr"].GetFloat() : 0.0),
-                        mat["specularexponent"].GetFloat(),
+                        mat["specularexponent"].GetInt(),
                         parseVec3f(mat["diffusecolor"].GetArray()));
   }
 }

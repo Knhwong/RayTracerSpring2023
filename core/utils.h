@@ -41,7 +41,7 @@ namespace rt {
   };*/
   	inline Matrix44f buildViewMatrix(Vec3f& pos, Vec3f& lookat, Vec3f& up) 
 	{ 
-		Vec3f forward = (pos- lookat).normalize();
+		Vec3f forward = (pos - lookat).normalize();
 		Vec3f right = up.normalize().crossProduct(forward).normalize();
 		Vec3f newup = forward.crossProduct(right); 
 		

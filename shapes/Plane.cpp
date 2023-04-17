@@ -36,7 +36,8 @@ namespace rt {
 		float b = normal.dotProduct((P-V1).crossProduct(V2-V1));
 		float c = normal.dotProduct((P-V2).crossProduct(V0-V2));
 		if ((a >= 0 && b >= 0 && c >= 0) || (a <= 0 && b <= 0 && c <= 0)) {
-			return Hit(true, P, normal);
+			float distance = (P - ray.origin).length();
+			return Hit(true, P, normal, distance);
 		}
 		return Hit(false);
 	}

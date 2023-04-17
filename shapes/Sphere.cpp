@@ -31,8 +31,8 @@ namespace rt{
 		t = t_0;
 		Vec3f P = ray.origin + (t*ray.direction);
 		Vec3f normal = (P - center).normalize();
-
-		return Hit(true, P, normal);
+		float distance = (P - ray.origin).length();
+		return Hit(true, P, normal, distance);
 	}
 	
 	Vec3f Sphere::shade(LightSource* light_source, Vec3f hit, Vec3f view, Vec3f normal) {

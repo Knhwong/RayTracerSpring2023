@@ -52,6 +52,18 @@ string
 utils.h
 ../core/utils.h
 
+../core/obj_loader.h
+math/geometry.h
+../core/math/geometry.h
+stdio.h
+-
+string.h
+-
+string
+-
+vector
+-
+
 ../core/utils.h
 rapidjson/document.h
 ../core/rapidjson/document.h
@@ -72,30 +84,6 @@ iostream
 iomanip
 -
 cmath
--
-
-../parsers/happly.h
-array
--
-cctype
--
-fstream
--
-iostream
--
-limits
--
-memory
--
-sstream
--
-string
--
-type_traits
--
-vector
--
-climits
 -
 
 ../parsers/rapidjson/allocators.h
@@ -287,12 +275,12 @@ encodings.h
 /root/RayTracer/shapes/TriMesh.cpp
 TriMesh.h
 /root/RayTracer/shapes/TriMesh.h
-parsers/happly.h
-/root/RayTracer/shapes/parsers/happly.h
 
 /root/RayTracer/shapes/TriMesh.h
 core/Shape.h
 /root/RayTracer/shapes/core/Shape.h
+core/obj_loader.h
+/root/RayTracer/shapes/core/obj_loader.h
 
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h

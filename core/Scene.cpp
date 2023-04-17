@@ -18,8 +18,9 @@ void Scene::createScene(Value &scenespecs) {
 
   // Build Shapes
   int i = 0;
-  for (Value &v : scenespecs["shapes"].GetArray()) {
+  for (Value& v : scenespecs["shapes"].GetArray()) {
     std::string type = v["type"].GetString();
+    std::cout << "Specular" << v["material"]["specularexponent"].GetInt() << "\n";
     if (type == "sphere") {
       printf("Adding Sphere\n");
       Material* mat =  Material::createMaterial(v["material"]);
@@ -38,7 +39,7 @@ void Scene::createScene(Value &scenespecs) {
     if (type == "trimesh"){
         printf("Adding Trimesh\n");
         Material* mat =  Material::createMaterial(v["material"]);
-        TriMesh::createTriMesh(v, mat);
+        shapes.push_back(TriMesh::createTriMesh(v, mat));
     }
   }
 }

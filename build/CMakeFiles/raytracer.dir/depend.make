@@ -184,6 +184,7 @@ CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/Material.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/RayHitStructs.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/Scene.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/Shape.h
+CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/obj_loader.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/utils.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../math/geometry.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../parsers/rapidjson/allocators.h
@@ -251,6 +252,7 @@ CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/LightSource.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/Material.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/RayHitStructs.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/Shape.h
+CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/obj_loader.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../core/utils.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../math/geometry.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../parsers/rapidjson/allocators.h
@@ -440,10 +442,10 @@ CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/RayHitStructs.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/RayTracer.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/Scene.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/Shape.h
+CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/obj_loader.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../core/utils.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../math/geometry.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/PPMWriter.h
-CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/happly.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/allocators.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/document.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/encodedstream.h
@@ -758,9 +760,9 @@ CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/LightSource.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/Material.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/RayHitStructs.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/Shape.h
+CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/obj_loader.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../core/utils.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../math/geometry.h
-CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/happly.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/allocators.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/document.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/encodedstream.h

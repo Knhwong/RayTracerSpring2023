@@ -27,7 +27,7 @@
         "material":{
             "ks":1.0,
             "kd":0.8,
-            "specularexponent":10,
+            "specularexponent":25,
             "diffusecolor":[0.4, 0.3, 0.4],
             "tPath": "../textures/sky-map.jpg",
             "tWidth": 850,
@@ -45,7 +45,8 @@
             "ks": 0.6,
             "kd": 0.7,
             "kr": 1.0,
-            "specularexponent": 10,
+            "specularexponent": 15,
+            "specular": 5,
             "diffusecolor": [1.0, 1.0, 1.0]
         }
     },
@@ -60,7 +61,8 @@
             "ks": 0.6,
             "kd": 0.7,
             "kr": 0.3,
-            "specularexponent": 10,
+            "specularexponent": 11,
+            "specular": 5,
             "diffusecolor": [1.0, 1.0, 1.0],
             "tPath": "../textures/sicily.jpg",
             "tWidth": 600,
@@ -76,7 +78,8 @@
         "material": {
             "ks": 0.6,
             "kd": 1.0,
-            "specularexponent": 10,
+            "specularexponent": 12,
+            "specular": 5,
             "diffusecolor": [1.0, 0.2, 0.2]
         }
     },
@@ -90,18 +93,7 @@
             "ks": 0.6,
             "kd": 1.0,
             "specularexponent": 10,
-            "diffusecolor": [0.2, 0.2, 1.0]
-        }
-    },
-    {
-        "id": "teapot",
-        "type": "trimesh",
-        "path": "../examples/teapot.ply",
-        "center": [0.0, 2.7, 0.15],
-        "material": {
-            "ks": 0.6,
-            "kd": 1.0,
-            "specularexponent": 10,
+            "specular": 8,
             "diffusecolor": [0.2, 0.2, 1.0]
         }
     }

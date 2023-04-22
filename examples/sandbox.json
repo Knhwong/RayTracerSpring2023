@@ -1,0 +1,61 @@
+{
+    "nbounces": 3,
+    "camera":{
+        "type":"pinhole",
+        "width":800,
+        "height":800,
+        "fov": 90,
+        "position": [0.0, 0.0, 3],
+        "lookat": [0.0, 0.0, 0.0],
+        "up": [0.0, 1.0, 0.0]
+    },
+    "scene":{
+        "backgroundcolor":[0.01, 0.01, 0.01],
+        "lightsources": [
+        {
+            "type": "pointlight",
+            "position": [0.0, 1.0, 1],
+            "is": [255.0, 255.0, 255.0],
+            "id": [255.0, 255.0, 255.0],
+            "intensity": 5
+        }
+    
+        ],
+        "shapes":[
+
+            {
+                "type":"sphere",
+                "center": [0.0, 0.0, 0.0],
+                "radius": 0.5,
+                "material":{
+                    "ks":0.5,
+                    "kd":0.5,
+                    "kr":0.0,
+                    "refractiveIndex": 1.1,
+                    "specularexponent": 100,
+                    "diffusecolor":[1, 0.7, 1]
+                }
+            },
+
+            {
+                "id": "back wall",
+                "type": "plane",
+                "v3": [-2.0, -4.0, -2.0],
+                "v0": [-2.0, 4.0, -2.0],
+                "v1": [2.0, 4.0, -2.0],
+                "v2": [2.0, -4.0, -2.0],
+                "material": {
+                    "ks": 0.0,
+                    "kd": 1.0,
+                    "kr": 0.0,
+                    "specularexponent": 11,
+                    "diffusecolor": [1.0, 1.0, 1.0],
+                    "tPath": "../textures/sicily.jpg",
+                    "tWidth": 600,
+                    "tHeight": 490
+                }
+            }
+        ]
+    }
+    }
+    

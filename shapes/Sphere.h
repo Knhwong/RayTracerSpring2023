@@ -33,7 +33,7 @@ public:
 	//
 	Hit intersect(Ray ray);
 	static Sphere* createSphere(Value& d, Material* mat);
-	
+	Vec2f getExtents(Vec3f n);
 
 private:
 	Vec3f center;

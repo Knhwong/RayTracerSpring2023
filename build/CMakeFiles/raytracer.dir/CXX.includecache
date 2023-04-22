@@ -47,6 +47,8 @@ math/geometry.h
 ../core/math/geometry.h
 rapidjson/document.h
 ../core/rapidjson/document.h
+shapes/BV.h
+../core/shapes/BV.h
 string
 ../core/string
 utils.h
@@ -272,6 +274,14 @@ rapidjson.h
 encodings.h
 ../parsers/rapidjson/encodings.h
 
+../shapes/BV.h
+math/geometry.h
+../shapes/math/geometry.h
+
+../shapes/BVH.h
+core/Shape.h
+../shapes/core/Shape.h
+
 /root/RayTracer/shapes/TriMesh.cpp
 TriMesh.h
 /root/RayTracer/shapes/TriMesh.h
@@ -281,6 +291,8 @@ core/Shape.h
 /root/RayTracer/shapes/core/Shape.h
 core/obj_loader.h
 /root/RayTracer/shapes/core/obj_loader.h
+shapes/BVH.h
+/root/RayTracer/shapes/shapes/BVH.h
 
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h

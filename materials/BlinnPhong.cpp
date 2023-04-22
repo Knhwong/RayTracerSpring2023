@@ -26,6 +26,6 @@ namespace rt{
         float specular_intensity = pow(std::max(half.dotProduct(normal), float(0)), specularExponent);
         Vec3f specular = specular_intensity * ks * light_source->get_is();
             
-        return (diffuse+specular);
+        return (diffuse+specular) * attenuation;
     }
 } //namespace rt

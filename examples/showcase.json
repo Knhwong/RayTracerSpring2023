@@ -1,0 +1,173 @@
+{
+"nbounces":4,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov": 90,
+    "position": [0.0, 2.0, 3.0],
+    "lookat": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "intensity": 5
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlight",
+        "position": [1.0, 2.0, 0.0],
+        "is": [255.0, 255.0, 255.0],
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 5
+    },
+    {
+        "type": "pointlight",
+        "position": [0.0, 5.0, 0.0],
+        "is": [255.0, 255.0, 255.0],
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 5
+    }
+    ],
+    "shapes":[
+        {
+            "id": "back wall",
+            "type": "plane",
+            "v3": [-2.0, -2.0, -2.0],
+            "v0": [-2.0, 2.0, -2.0],
+            "v1": [2.0, 2.0, -2.0],
+            "v2": [2.0, -2.0, -2.0],
+            "material": {
+                "ks": 0.5,
+                "kd": 0.7,
+                "kr": 1.0,
+                "specularexponent": 50,
+                "diffusecolor": [0,0,0],
+                "tWidth": 600,
+                "tHeight": 490
+            }
+        },
+        {
+            "type":"sphere",
+            "center": [0.0, 0.0, 0.0],
+            "radius": 0.5,
+            "material":{
+                "ks":0.8,
+                "kd":1.0,
+                "kr":0.0,
+                "specularexponent": 50,
+                "diffusecolor":[1.0, 1.0, 1.0],
+                "tPath": "../textures/sky-map.jpg",
+                "tWidth": 850,
+                "tHeight": 480
+            }
+        },
+        {
+            "type":"sphere",
+            "center": [1.0, 1.0, 0.0],
+            "radius": 0.2,
+            "material":{
+                "ks":0.0,
+                "kd":1.0,
+                "kr":0.0,
+                "refractiveIndex": 1.5,
+                "specularexponent": 50,
+                "diffusecolor":[1.0, 0.8, 0.9]
+            }
+        },
+        {
+            "type":"sphere",
+            "center": [0.0, 0.0, 1.0],
+            "radius": 0.3,
+            "material":{
+                "ks":0.0,
+                "kd":1.0,
+                "kr":0.4,
+                "refractiveIndex": 1.5,
+                "specularexponent": 50,
+                "diffusecolor":[1.0, 1.0, 1.0]
+            }
+        },
+        {
+            "type":"sphere",
+            "center": [-0.5, 0.5, 0.0],
+            "radius": 0.2,
+            "material":{
+                "ks":0.8,
+                "kd":1.0,
+                "kr":1.0,
+                "specularexponent": 50,
+                "diffusecolor":[0,0,0]
+            }
+        },
+        {
+            "id": "floor",
+            "type": "plane",
+            "v3": [2.0, 0, 2.0],
+            "v2": [2.0, 0, -2.0],
+            "v0": [-2.0, 0, 2.0],
+            "v1": [-2.0, 0, -2.0],
+            "material": {
+                "ks": 0.5,
+                "kd": 0.7,
+                "kr": 0.0,
+                "specularexponent": 50,
+                "specular": 5,
+                "diffusecolor": [1.0, 1.0, 1.0],
+                "tPath": "../textures/sicily.jpg",
+                "tWidth": 600,
+                "tHeight": 490
+            }
+        },
+        {
+            "id": "floor",
+            "type": "plane",
+            "v3": [1.0, 0.2, 1.0],
+            "v2": [1.0, 0.2, 2.0],
+            "v0": [2.0, 0.2, 1.0],
+            "v1": [2.0, 0.2, 2.0],
+            "material": {
+                "ks": 0.5,
+                "kd": 0.7,
+                "kr": 0.4,  
+                "refractiveIndex": 1.5,
+                "specularexponent": 50,
+                "specular": 5,
+                "diffusecolor": [0.8, 1.0, 1.0]
+            }
+        },
+        {
+            "type":"trimesh",
+            "center": [-1, 1.0, 2.0],
+            "scale": 0.3,
+            "path": "../examples/objects/donut.obj",
+            "material":{
+                "ks":0.2,
+                "kd": 0.6,
+                "kr": 0.0,
+                "specularexponent": 100,
+                "diffusecolor":[1.0, 1.0, 0.5],
+                "tPath": "../textures/scifi.jpg",
+                "tWidth": 1024,
+                "tHeight": 1024
+            }
+
+        },
+        {
+            "type":"trimesh",
+            "center": [0.0, 1.0, 1.7],
+            "scale": 0.5,
+            "path": "../examples/objects/teapot.obj",
+            "material":{
+                "ks":0.6,
+                "kd": 0.6,
+                "kr": 0.0,
+                "specularexponent": 100,
+                "diffusecolor":[1.0, 1.0, 0.5]
+            }
+        }
+
+
+
+    ]
+}
+}

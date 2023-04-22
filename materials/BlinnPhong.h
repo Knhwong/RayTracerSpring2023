@@ -13,13 +13,13 @@ namespace rt {
 
 class BlinnPhong : public Material {
 public:
-  BlinnPhong(float ks, float kd, float kr, int specular, Vec3f diffuse)
-      : Material(ks, kd, kr, specular, diffuse){
+  BlinnPhong(float ks, float kd, float kr, int specular, float ri, Vec3f diffuse)
+      : Material(ks, kd, kr, specular, ri, diffuse){
         
         printf("Material Created: %f, %f, %f, %i\n", ks, kd, kr, specular);
       };
-  BlinnPhong(float ks, float kd, float kr, int specular, Vec3f diffuse, std::string t, float w, float h)
-      : Material(ks, kd, kr, specular, diffuse, t, w, h){
+  BlinnPhong(float ks, float kd, float kr, int specular, float ri, Vec3f diffuse, std::string t, float w, float h)
+      : Material(ks, kd, kr, specular, ri, diffuse, t, w, h){
         printf("Material Created: %f, %f, %f, %i\n", ks, kd, kr, specular);
 
 

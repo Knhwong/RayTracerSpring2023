@@ -1,6 +1,7 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/.",
     "files.associations": {
+        "*.js": "javascriptreact",
         "optional": "cpp",
         "*.tcc": "cpp",
         "random": "cpp",
@@ -64,7 +65,18 @@
         "bitset": "cpp",
         "regex": "cpp",
         "shared_mutex": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cfenv": "cpp",
+        "charconv": "cpp",
+        "codecvt": "cpp",
+        "cuchar": "cpp",
+        "future": "cpp",
+        "scoped_allocator": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp",
+        "bvh": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -12,7 +12,7 @@ namespace rt {
 /*
  * Ray structure definition
  */
-enum RayType { PRIMARY, SECONDARY, SHADOW};
+enum RayType { PRIMARY, REFLECTION, REFRACTION, SHADOW};
 
 struct Ray {
 

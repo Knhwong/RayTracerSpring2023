@@ -208,12 +208,15 @@ CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../parsers/rapidjson/msinttypes/s
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/BV.h
+CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/BVH.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/Plane.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/Sphere.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/TriMesh.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../shapes/Triangle.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/RayTracer.cpp
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/RayTracer.h
+CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: ../core/utils.h
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: /usr/local/include/opencv4/opencv2/core/base.hpp
 CMakeFiles/raytracer.dir/core/RayTracer.cpp.o: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
@@ -276,6 +279,8 @@ CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../parsers/rapidjson/msinttypes/stdin
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../shapes/BV.h
+CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../shapes/BVH.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../shapes/Plane.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../shapes/Sphere.h
 CMakeFiles/raytracer.dir/core/Scene.cpp.o: ../shapes/TriMesh.h
@@ -344,6 +349,7 @@ CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../parsers/rapidjson/msinttypes/stdin
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../shapes/BV.h
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../core/Shape.cpp
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../core/Shape.h
 CMakeFiles/raytracer.dir/core/Shape.cpp.o: ../core/utils.h
@@ -467,6 +473,8 @@ CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/msinttypes/stdint
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/main/main.cpp.o: ../shapes/BV.h
+CMakeFiles/raytracer.dir/main/main.cpp.o: ../shapes/BVH.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../shapes/Plane.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../shapes/Sphere.h
 CMakeFiles/raytracer.dir/main/main.cpp.o: ../shapes/TriMesh.h
@@ -594,6 +602,7 @@ CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../parsers/rapidjson/msinttypes/stdin
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../shapes/BV.h
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../shapes/BVH.cpp
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: ../shapes/BVH.h
 CMakeFiles/raytracer.dir/shapes/BVH.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
@@ -657,6 +666,7 @@ CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../parsers/rapidjson/msinttypes/std
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../shapes/BV.h
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../shapes/Plane.cpp
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: ../shapes/Plane.h
 CMakeFiles/raytracer.dir/shapes/Plane.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
@@ -720,6 +730,7 @@ CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../parsers/rapidjson/msinttypes/st
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../shapes/BV.h
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../shapes/Sphere.cpp
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: ../shapes/Sphere.h
 CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
@@ -784,6 +795,8 @@ CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/msinttypes/s
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/rapidjson.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/reader.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../parsers/rapidjson/stream.h
+CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../shapes/BV.h
+CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../shapes/BVH.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../shapes/TriMesh.cpp
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: ../shapes/TriMesh.h
 CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp

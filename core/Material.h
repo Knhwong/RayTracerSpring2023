@@ -21,21 +21,23 @@ namespace rt{
 
 class Material{
 public:
-    Material(float ks, float kd, float kr, int specular, Vec3f diffuse)
-    :ks(ks), kd(kd), kr(kr), specularExponent(specular), diffuseColor(diffuse){};
-    Material(float ks, float kd, float kr, int specular, Vec3f diffuse, std::string t, float w, float h);
+    Material(float ks, float kd, float kr, int specular, float ri, Vec3f diffuse)
+    :ks(ks), kd(kd), kr(kr), specularExponent(specular), refractiveIndex(ri), diffuseColor(diffuse){};
+    Material(float ks, float kd, float kr, int specular, float ri, Vec3f diffuse, std::string t, float w, float h);
     virtual ~Material(){};
 
     static Material* createMaterial(Value& mat);
     virtual Vec3f shade(LightSource* light_source, Vec3f hit, Vec3f view, Vec3f normal, Vec3f diffuseColor_) = 0;
     void print();
     float getKr() {return kr;};
+    float getRI() {return refractiveIndex;}
     Vec3f getColor(float u, float v);
 
 protected:
     float ks = 0;
     float kd = 0;
     float kr = 0;
+    float refractiveIndex = 1;
     int specularExponent = 0;
     Vec3f diffuseColor;
     std::string tPath = "";

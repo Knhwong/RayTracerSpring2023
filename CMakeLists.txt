@@ -21,6 +21,7 @@ cameras/*.cpp
 lights/*.cpp
 shapes/*.cpp
 materials/*.cpp
+parsers/fast_obj.h
 )
 
 

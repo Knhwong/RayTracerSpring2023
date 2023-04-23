@@ -26,6 +26,7 @@ public:
 private:
 	static Hit NearestIntersection(Scene* scene, Ray ray, Shape*& object);
 	static Vec3f RayTrace(Scene* scene, Ray ray, int nbounces);
+	static Vec3f Refract(Scene scene, Ray ray, Hit hit, Shape* obj);
 };
 
 

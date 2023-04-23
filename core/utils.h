@@ -10,6 +10,7 @@ using namespace rapidjson;
 
 namespace rt {
 
+
     inline Vec3f parseVec3f(Value doc) {
 	Vec3f out;
 	for (SizeType i = 0; i < doc.Size(); i++) {
@@ -41,7 +42,7 @@ namespace rt {
   };*/
   	inline Matrix44f buildViewMatrix(Vec3f& pos, Vec3f& lookat, Vec3f& up) 
 	{ 
-		Vec3f forward = (pos- lookat).normalize();
+		Vec3f forward = (pos - lookat).normalize();
 		Vec3f right = up.normalize().crossProduct(forward).normalize();
 		Vec3f newup = forward.crossProduct(right); 
 		
@@ -53,6 +54,23 @@ namespace rt {
 		);
 		return m;
   };
+
+     inline Vec3f calculateBarycentric(Vec3f V0, Vec3f V1, Vec3f V2, Vec3f point)
+    {
+        Vec3f v0 = V1 - V0, v1 = V2 - V0, v2 = point - V0;
+        float d00 = v0.dotProduct(v0);
+        float d01 = v0.dotProduct(v1);
+        float d11 = v1.dotProduct(v1);
+        float d20 = v2.dotProduct(v0);
+        float d21 = v2.dotProduct(v1);
+        float denom = d00 * d11 - d01 * d01;
+
+        Vec3f uv;
+        uv.y = (d11 * d20 - d01 * d21) / denom;
+        uv.z = (d00 * d21 - d01 * d20) / denom;
+        uv.x = 1.0 - uv.y - uv.z;
+        return uv;
+    }
 
 }
 

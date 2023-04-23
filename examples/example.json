@@ -14,9 +14,10 @@
     "lightsources": [
     {
         "type": "pointlight",
-        "position": [0.0, 1.0, 1.5],
+        "position": [1.0, 0.7, 1.5],
         "is": [255.0, 255.0, 255.0],
-        "id": [255.0, 255.0, 255.0]
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 8
     }
     ],
     "shapes":[
@@ -25,10 +26,11 @@
         "center": [0.0, 2.7, 0.15],
         "radius": 0.5,
         "material":{
-            "ks":1.0,
-            "kd":0.8,
-            "specularexponent":10,
-            "diffusecolor":[0.4, 0.3, 0.4],
+            "ks":0.8,
+            "kd":1.0,
+            "kr":0.0,
+            "specularexponent": 50,
+            "diffusecolor":[1.0, 1.0, 1.0],
             "tPath": "../textures/sky-map.jpg",
             "tWidth": 850,
             "tHeight": 480
@@ -42,10 +44,10 @@
         "v3": [2.0, 8.0, 5.0],
         "v0": [2.0, 8.0, 0.0],
         "material":{
-            "ks": 0.6,
-            "kd": 0.7,
-            "kr": 1.0,
-            "specularexponent": 10,
+            "ks": 0.0,
+            "kd": 0.4,
+            "kr": 0.7,
+            "specularexponent": 15,
             "diffusecolor": [1.0, 1.0, 1.0]
         }
     },
@@ -57,10 +59,10 @@
         "v1": [2.0, 8.0, 0.0],
         "v2": [2.0, 0.0, 0.0],
         "material": {
-            "ks": 0.6,
+            "ks": 0.0,
             "kd": 0.7,
-            "kr": 0.3,
-            "specularexponent": 10,
+            "kr": 0.0,
+            "specularexponent": 11,
             "diffusecolor": [1.0, 1.0, 1.0],
             "tPath": "../textures/sicily.jpg",
             "tWidth": 600,
@@ -76,8 +78,11 @@
         "material": {
             "ks": 0.6,
             "kd": 1.0,
-            "specularexponent": 10,
-            "diffusecolor": [1.0, 0.2, 0.2]
+            "specularexponent": 12,
+            "diffusecolor": [1.0, 0.2, 0.2],
+            "tPath": "../textures/sand.jpg",
+            "tWidth": 1024,
+            "tHeight": 1024
         }
     },
     {
@@ -86,18 +91,6 @@
         "v0": [2.0, 8.0, 0.0],
         "v1": [2.0, 0.0, 0.0],
         "v2": [2.0, 8.0, 5.0],
-        "material": {
-            "ks": 0.6,
-            "kd": 1.0,
-            "specularexponent": 10,
-            "diffusecolor": [0.2, 0.2, 1.0]
-        }
-    },
-    {
-        "id": "teapot",
-        "type": "trimesh",
-        "path": "../examples/teapot.ply",
-        "center": [0.0, 2.7, 0.15],
         "material": {
             "ks": 0.6,
             "kd": 1.0,

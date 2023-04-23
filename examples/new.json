@@ -1,0 +1,76 @@
+{
+"nbounces":3,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov": 90,
+    "position": [0.0, 0.0, 3.0],
+    "lookat": [0.0, 0.0, 0.0],
+    "up": [0.0, 1.0, 0.0],
+    "intensity": 5
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlight",
+        "position": [2.0, 0.0, 2.0],
+        "is": [255.0, 255.0, 255.0],
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 2
+    },
+    {
+        "type": "pointlight",
+        "position": [0.0, -2.0, 2.0],
+        "is": [255.0, 255.0, 255.0],
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 2
+    },
+    {
+        "type": "pointlight",
+        "position": [0.0, 0.0, 3.0],
+        "is": [255.0, 255.0, 255.0],
+        "id": [255.0, 255.0, 255.0],
+        "intensity": 2
+    }
+
+    ],
+    "shapes":[
+        {
+            "type":"trimesh",
+            "center": [0, 0, 0],
+            "scale": 1.5,
+            "path": "../examples/objects/donut.obj",
+            "material":{
+                "ks":0.4,
+                "kd": 1.0,
+                "kr": 0.0,
+                "specularexponent": 100,
+                "diffusecolor":[1.0, 1.0, 0.5],
+                "tWidth": 225,
+                "tHeight": 225
+            }
+
+        },
+        {
+            "id": "back wall",
+            "type": "plane",
+            "v3": [-2.0, -4.0, -2.0],
+            "v0": [-2.0, 4.0, -2.0],
+            "v1": [2.0, 4.0, -2.0],
+            "v2": [2.0, -4.0, -2.0],
+            "material": {
+                "ks": 0.0,
+                "kd": 1.0,
+                "kr": 0.0,
+                "specularexponent": 11,
+                "diffusecolor": [1.0, 1.0, 1.0],
+                "tPath": "../textures/sicily.jpg",
+                "tWidth": 600,
+                "tHeight": 490
+            }
+        }
+    ]
+}
+}

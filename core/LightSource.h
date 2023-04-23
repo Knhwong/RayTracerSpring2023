@@ -13,9 +13,9 @@ namespace rt{
 
 class LightSource {
 public:
-    LightSource(Vec3f p, Vec3f is_, Vec3f id_): position(p), is(is_), id(id_){
-        id /= 255;
-        is /= 255;
+    LightSource(Vec3f p, Vec3f is_, Vec3f id_, float intensity): position(p), is(is_), id(id_){
+        is = is.normalize() * intensity;
+        id = id.normalize() * intensity;
         printf("Is: %f, Id: %f\n", is.x, id.x);
     }
     static LightSource* createLight(Value& lightSpecs);

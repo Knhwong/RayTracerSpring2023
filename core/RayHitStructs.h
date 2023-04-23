@@ -12,7 +12,7 @@ namespace rt {
 /*
  * Ray structure definition
  */
-enum RayType { PRIMARY, SECONDARY, SHADOW};
+enum RayType { PRIMARY, REFLECTION, REFRACTION, SHADOW};
 
 struct Ray {
 
@@ -31,6 +31,7 @@ struct Hit {
   Hit(){};
   Hit(bool isHit):isHit(isHit){};
   Hit(bool isHit, Vec3f point, Vec3f normal): isHit(isHit), point(point), normal(normal){};
+  Hit(bool isHit, Vec3f point, Vec3f normal, float dist): isHit(isHit), point(point), normal(normal), distance(dist){};
 };
 
 } // namespace rt

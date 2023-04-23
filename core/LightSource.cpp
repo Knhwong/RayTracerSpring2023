@@ -20,7 +20,8 @@ namespace rt{
             return new PointLight(
                 parseVec3f(lightSpec["position"].GetArray()),
                 parseVec3f(lightSpec["is"].GetArray()),
-                parseVec3f(lightSpec["id"].GetArray())
+                parseVec3f(lightSpec["id"].GetArray()),
+                lightSpec.HasMember("intensity") ? lightSpec["intensity"].GetFloat() : 1.0
             );
         }
 

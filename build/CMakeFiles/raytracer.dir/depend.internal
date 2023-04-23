@@ -185,6 +185,7 @@ CMakeFiles/raytracer.dir/core/RayTracer.cpp.o
  ../core/RayHitStructs.h
  ../core/Scene.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/rapidjson/allocators.h
@@ -208,12 +209,15 @@ CMakeFiles/raytracer.dir/core/RayTracer.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
+ ../shapes/BVH.h
  ../shapes/Plane.h
  ../shapes/Sphere.h
  ../shapes/TriMesh.h
  ../shapes/Triangle.h
  /root/RayTracer/core/RayTracer.cpp
  /root/RayTracer/core/RayTracer.h
+ /root/RayTracer/core/utils.h
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/base.hpp
  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
@@ -252,6 +256,7 @@ CMakeFiles/raytracer.dir/core/Scene.cpp.o
  ../core/Material.h
  ../core/RayHitStructs.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/rapidjson/allocators.h
@@ -275,6 +280,8 @@ CMakeFiles/raytracer.dir/core/Scene.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
+ ../shapes/BVH.h
  ../shapes/Plane.h
  ../shapes/Sphere.h
  ../shapes/TriMesh.h
@@ -343,6 +350,7 @@ CMakeFiles/raytracer.dir/core/Shape.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
  /root/RayTracer/core/Shape.cpp
  /root/RayTracer/core/Shape.h
  /root/RayTracer/core/utils.h
@@ -441,10 +449,10 @@ CMakeFiles/raytracer.dir/main/main.cpp.o
  ../core/RayTracer.h
  ../core/Scene.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
  ../parsers/PPMWriter.h
- ../parsers/happly.h
  ../parsers/rapidjson/allocators.h
  ../parsers/rapidjson/document.h
  ../parsers/rapidjson/encodedstream.h
@@ -466,6 +474,8 @@ CMakeFiles/raytracer.dir/main/main.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
+ ../shapes/BVH.h
  ../shapes/Plane.h
  ../shapes/Sphere.h
  ../shapes/TriMesh.h
@@ -593,6 +603,7 @@ CMakeFiles/raytracer.dir/shapes/BVH.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
  /root/RayTracer/shapes/BVH.cpp
  /root/RayTracer/shapes/BVH.h
  /usr/local/include/opencv4/opencv2/core.hpp
@@ -656,6 +667,7 @@ CMakeFiles/raytracer.dir/shapes/Plane.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
  /root/RayTracer/shapes/Plane.cpp
  /root/RayTracer/shapes/Plane.h
  /usr/local/include/opencv4/opencv2/core.hpp
@@ -719,6 +731,7 @@ CMakeFiles/raytracer.dir/shapes/Sphere.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
  /root/RayTracer/shapes/Sphere.cpp
  /root/RayTracer/shapes/Sphere.h
  /usr/local/include/opencv4/opencv2/core.hpp
@@ -759,9 +772,9 @@ CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o
  ../core/Material.h
  ../core/RayHitStructs.h
  ../core/Shape.h
+ ../core/obj_loader.h
  ../core/utils.h
  ../math/geometry.h
- ../parsers/happly.h
  ../parsers/rapidjson/allocators.h
  ../parsers/rapidjson/document.h
  ../parsers/rapidjson/encodedstream.h
@@ -783,6 +796,8 @@ CMakeFiles/raytracer.dir/shapes/TriMesh.cpp.o
  ../parsers/rapidjson/rapidjson.h
  ../parsers/rapidjson/reader.h
  ../parsers/rapidjson/stream.h
+ ../shapes/BV.h
+ ../shapes/BVH.h
  /root/RayTracer/shapes/TriMesh.cpp
  /root/RayTracer/shapes/TriMesh.h
  /usr/local/include/opencv4/opencv2/core.hpp
